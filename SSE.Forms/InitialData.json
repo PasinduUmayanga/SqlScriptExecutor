@@ -1,0 +1,10 @@
+{
+  "SqlDirectory": "C:\\SqlScriptRun\\Scripts",
+  "ServerName": "LKH2LP0009\\SQLEXPRESS",
+  "DatabaseName": "GEMBA",
+  "Username": "sa",
+  "Password": "Password$",
+  "LogFile": "execution_log.txt",
+  "ErrorDirectory": "C:\\SqlScriptRun\\error_directory",
+  "SuccessDirectory": "C:\\SqlScriptRun\\success_directory"
+}

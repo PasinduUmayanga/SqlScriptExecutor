@@ -1,8 +1,8 @@
 namespace SSE.Forms
 {
-    public partial class Form1 : Form
+    public partial class ExecutorForm : Form
     {
-        public Form1()
+        public ExecutorForm()
         {
             InitializeComponent();
         }
