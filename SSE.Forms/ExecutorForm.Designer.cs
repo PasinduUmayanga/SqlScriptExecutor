@@ -137,6 +137,7 @@
             Controls.Add(label1);
             Name = "ExecutorForm";
             Text = "Sql Executor";
+            Load += ExecutorForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
