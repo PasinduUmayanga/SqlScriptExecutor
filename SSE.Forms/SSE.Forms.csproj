@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SSE.Services\SSE.Services.csproj" />
   </ItemGroup>
 
