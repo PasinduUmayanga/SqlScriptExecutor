@@ -1,5 +1,6 @@
 # SqlScriptExecutor
-<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/99351db2-34bb-4471-8b3f-db674769da21" />
+<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/0b655c6e-1ca2-4f09-bc51-73e5b3558be4" />
+
 
 
 [![Build status](https://ci.appveyor.com/api/projects/status/1booou7hae2f4s9f?svg=true)](https://ci.appveyor.com/project/Mahadenamuththa/sqlscriptexecutor)
