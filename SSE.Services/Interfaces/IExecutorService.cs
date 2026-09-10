@@ -4,6 +4,6 @@ namespace SSE.Services.Interfaces
 {
     public interface IExecutorService
     {
-        AppConfig ReadAppConfig();
+        AppConfig ReadAppConfig(string? configPath = null);
     }
 }

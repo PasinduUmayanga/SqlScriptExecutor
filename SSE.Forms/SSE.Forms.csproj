@@ -17,4 +17,9 @@
     <ProjectReference Include="..\SSE.Services\SSE.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="AppConfig.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="AppConfig.example.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>

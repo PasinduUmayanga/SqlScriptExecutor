@@ -16,11 +16,19 @@ namespace SSE.Forms
             try
             {
                 var app = _executorService.ReadAppConfig();
+                textBox1.Text = app.SqlDirectory;
+                textBox2.Text = app.ServerName;
+                textBox3.Text = app.DatabaseName;
+                textBox4.Text = app.Username;
+                textBox5.Text = string.IsNullOrEmpty(app.Password) ? string.Empty : "********";
             }
             catch (Exception ex)
             {
-
-                throw;
+                MessageBox.Show(
+                    ex.Message,
+                    "Configuration Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
     }

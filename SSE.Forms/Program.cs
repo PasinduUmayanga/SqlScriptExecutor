@@ -11,10 +11,7 @@ namespace SSE.Forms
         [STAThread]
         static void Main()
         {
-            var builder = CreateHostBuilder();
-            builder.AddApplicationServices();
-
-            var app = builder.Build();
+            using var app = CreateHostBuilder().Build();
 
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
@@ -28,6 +25,7 @@ namespace SSE.Forms
            Host.CreateDefaultBuilder()
                .ConfigureServices((context, services) =>
                {
+                   services.AddApplicationServices();
                    services.AddTransient<ExecutorForm>();
                });
     }
