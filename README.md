@@ -1,4 +1,6 @@
 # SqlScriptExecutor
+<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/99351db2-34bb-4471-8b3f-db674769da21" />
+
 
 [![Build status](https://ci.appveyor.com/api/projects/status/1booou7hae2f4s9f?svg=true)](https://ci.appveyor.com/project/Mahadenamuththa/sqlscriptexecutor)
 ![.NET](https://img.shields.io/badge/.NET-8.0-512BD4)
