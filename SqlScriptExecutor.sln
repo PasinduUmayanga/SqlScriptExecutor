@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSE.Services", "SSE.Service
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSE.Models", "SSE.Models\SSE.Models.csproj", "{97325660-0C3C-40E1-B19D-7E4BF03C1A19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSE.Tests", "SSE.Tests\SSE.Tests.csproj", "{F55D5FCE-C8BD-463D-8CC1-A80DDB1F1899}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{97325660-0C3C-40E1-B19D-7E4BF03C1A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97325660-0C3C-40E1-B19D-7E4BF03C1A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97325660-0C3C-40E1-B19D-7E4BF03C1A19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F55D5FCE-C8BD-463D-8CC1-A80DDB1F1899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55D5FCE-C8BD-463D-8CC1-A80DDB1F1899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55D5FCE-C8BD-463D-8CC1-A80DDB1F1899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55D5FCE-C8BD-463D-8CC1-A80DDB1F1899}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

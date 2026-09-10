@@ -9,11 +9,34 @@ namespace SSE.Services.Services
         private readonly IFileHelper _FileHelper = fileHelper;
         private readonly IJsonHelper _JsonHelper = jsonHelper;
 
-        public AppConfig ReadAppConfig()
+        public AppConfig ReadAppConfig(string? configPath = null)
         {
-            string appConfigString = _FileHelper.ReadFile("Appconfig.json");
-            AppConfig appConfig = _JsonHelper.Deserialize<AppConfig>(appConfigString) ?? new AppConfig();
-            return appConfig;
+            string resolvedPath = ResolveConfigPath(configPath);
+            string appConfigString = _FileHelper.ReadFile(resolvedPath);
+
+            if (string.IsNullOrWhiteSpace(appConfigString))
+            {
+                throw new FileNotFoundException($"Configuration file was not found or was empty: {resolvedPath}");
+            }
+
+            return _JsonHelper.Deserialize<AppConfig>(appConfigString)
+                ?? throw new InvalidOperationException($"Configuration file is invalid: {resolvedPath}");
+        }
+
+        private static string ResolveConfigPath(string? configPath)
+        {
+            if (!string.IsNullOrWhiteSpace(configPath))
+            {
+                return configPath;
+            }
+
+            string localConfigPath = Path.Combine(AppContext.BaseDirectory, "AppConfig.json");
+            if (File.Exists(localConfigPath))
+            {
+                return localConfigPath;
+            }
+
+            return Path.Combine(AppContext.BaseDirectory, "AppConfig.example.json");
         }
     }
 }
